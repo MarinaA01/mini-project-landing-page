@@ -1,73 +1,116 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body {
     background-color: beige;
+    position: relative;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-size: 20px;
+    color: darkolivegreen;
 }
 header,
 footer {
     background: darkgreen;
     width: 100%;
-    text-align: center;
+    line-height: 60px;
     color: ivory;
     padding: 10px 0;
 }
 
-
-#header-divider {
-    background-color: lightpink;
-    height: 10px;
+header {
+    position: fixed;
+    border-bottom: 10px solid lightpink;
 }
-#footer-divider {
-    background-color: lightpink;
-    height: 10px;
+
+footer {
+    position: absolute;
+    margin-top: 0;
+    bottom: 0;
+    border-bottom: 10px solid #30030e;
+}
+
+figure {
+    margin-bottom: 40px;
 }
 
 a {
     color: ivory;
+    text-decoration: none;
 }
 
 li {
-    display: inline-block;
+    display: inline;
+    padding: 0px 20px;
+    text-decoration: none;
 }
 
-h1 {
-    text-align: center;
-}
-
+h1,
 h2 {
-    padding: 10px;
-    color: ivory;
+    margin: 20px;
+}
+
+main {
+    padding: 60px 0;
 }
 
 img {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
-p {
-    text-align: center;
-}
-
-.contact {
-    text-align: center;
-    background-color: olive;
-    align-items: center;
-}
 section {
-    padding: 10px 0;
+    margin-bottom: 0;
+    padding: 20px 10px 40px 10px;
+    background-color: olive;
+    border-top: 3px solid lightgrey;
+    color: ivory;
 }
 
-fieldset {
-    border: 3px solid ivory;
-    border-radius: 25px;
-    padding: 30px;
-    display: inline-block;
+form {
+    margin: 0 auto;
+    align-items: center;
+    width: 500px;
+    padding: 10px;
+    border: 5px solid lightpink;
+    border-radius: 20px;
+}
+
+form ul li {
+    display: block;
+    margin: 0 auto;
 }
 
 label {
-    display: block;
+    display: inline;
     color: ivory;
+    width: 100px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    width: 300px;
+    border: 1px solid darkolivegreen;
+}
+
+textarea {
+    vertical-align: top;
+    height: 60px;
+}
+
+button {
+    height: 40px;
+    width: 120px;
+    background-color: darkolivegreen;
+    color: ivory;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
